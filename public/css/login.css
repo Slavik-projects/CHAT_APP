@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Albert Sans', sans-serif;
+   font-family: 'Corben', cursive;
+}
+body{
+	background-color: rgba(137, 182, 182, 0.425);
+}
+label{
+	font-size: 18px;
+	font-family: 'Corben', cursive;
+	font-weight: 500;
+	margin-right: 10px;
+}
+.login-container {
+	background-color: rgb(181, 189, 189);
+	max-width: 500px;
+	margin: 20px auto;
+	padding: 15px 15px;
+	border-radius: 6px;
+}
+.login-name h1 {
+	font-family: 'Albert Sans', sans-serif;
+	font-weight: 700;
+}
+.login-main {
+	display: flex;
+	justify-content: center;
+}
+.form-control {
+	margin-bottom: 20px;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+}
+.btn {
+	padding: 10px;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	background-color: rgb(61, 65, 63);
+	color: white;
+	font-family: 'Corben', cursive;
+	font-size: 18px;
+	font-weight: 500;
+}

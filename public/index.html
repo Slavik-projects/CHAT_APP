@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;600&family=Corben&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/login.css">
+	<title>Login Page</title>
+</head>
+<body>
+	<div class="login-container">
+		<header class="login-container">
+         <div class="login-name">
+				<h1>Hello! Welcome to our chat</h1>
+			</div>
+		</header>
+		<main class="login-main">
+			<form id="login-form" action="chat.html">
+				<div class="form-control">
+					<label for="email">Email adress</label>
+					<input type="email"
+					name="email"
+					id="email"
+					placeholder="Enter your email..."
+					required
+					/>
+				</div>
+				<div class="form-control">
+					<label for="username">Username</label>
+					<input type="text"
+					name="username"
+					id="username"
+					placeholder="Enter username..."
+					required
+					/>
+				</div>
+				<div class="form-control">
+					<label for="room">Groups</label>
+					<select name="room" id="room">
+						<option value="learn-javascript">learn-javascript</option>
+						<option value="announcements">Announcements</option>
+						<option value="web-design">web design</option>
+						<option value="private">private</option>
+					</select>
+				</div>
+				<div class="flex">
+					<button type="submit" class="btn">Login to Chat</button>
+				</div>
+			</form>
+		</main>
+	</div>
+	<script src="js/quantity.js"></script>
+</body>
+</html>

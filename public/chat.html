@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;600&family=Corben&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Chat application</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="columns">
+			<div class="columns__one">
+				<div class="one__header">
+					<p class="active__room">Rooms</p>
+					<p class="active__direct">Directs</p>
+				</div>
+				<div class="tabs">
+					<div class="one_rooms">
+						<div class="one_border">
+							<div class="named">
+								<p>JOINED ROOMS</p>
+							</div>
+							<div class="learn">
+								<div class="planet"><p>r/learnjavascript</p></div>
+								<div class="users"><p>learn-javascript</p></div>
+							</div>
+							<div class="announce">
+								<div class="planet"><p>r/ProgrammerHumor</p></div>
+								<div class="users"><p>Announcements</p></div>
+							</div>
+							<div class="design">
+								<div class="planet"><p>r/web_design</p></div>
+								<div class="users"><p>web design</p></div>
+							</div>
+							<div class="something">
+								<h2 id="room-name"></h2>
+								<ul class="groups">
+
+								</ul>
+							</div>
+							<div class="recommended">
+								<p>RECOMMENDED ROOMS</p>
+							</div>
+							<div class="also">
+								<p>Also check out <a href="#">r/SubChats</a></p>
+							</div>
+							<div class="community">
+								<div class="community__logo">
+									<img src="img/chat-logo.jpg" alt="">
+								</div>
+								<div class="community__describe">
+									<div class="community__chat"><p>r/community_chat</p></div>
+									<div class="community__chattit"><p>Chattit 1</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="one_directs">
+					<div class="online">
+						<p>Users online</p>
+						<ul class="activated"></ul>
+					</div>
+				</div><!--TO COMPLETE-->
+			</div>
+			</div>
+			<div class="columns__two">
+            <div class="two_header">
+					<div class="header_members">
+						<div class="dates">
+							<p class="group-name"></p><br>
+						<p class="quantity"></p><br>
+						</div>
+						<div class="leave">
+							<i class="fa-solid fa-gear fa-xl" style="color: rgb(166, 168, 171);"></i>
+							<i class="fa-solid fa-maximize fa-xl" style="color: rgb(166, 168, 171);"></i>
+							<i class="fa-solid fa-chevron-up fa-flip-vertical fa-xl" style="color: rgb(166, 168, 171);"></i>
+							<a href="" class="leave-close"><i class="fa-solid fa-xmark fa-xl" style="color: rgb(166, 168, 171);"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="two_messages">
+               <ul class="messages_field" id="messages_field">
+                  
+					</ul>
+				</div>
+				<form action="#" id="form">
+               <input id="input" autocomplete="off" placeholder="Enter text here..." type="text"><button><i class="fa-solid fa-paper-plane fa-lg" style="color: #f1eded;"></i></button>
+					<div class="smile"><i class="fa-solid fa-face-smile fa-2xl" style="color: #aeafb2;"></i><p class="urr">/u</p><p class="redd">/r</p></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/144915499e.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.2/qs.min.js" integrity="sha512-vCegEXqPUYpZsTGz2lk0jaQ1psxtFeniVJACAXhMVxuoYa/N4nZkjoVFOxLwP7uGeQOoemiz7DQrIpRTj4IBPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/frontend.js"></script>
+</body>
+</html>
